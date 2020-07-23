@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         for (int i = 0; i <= 100; i++) {
             for (int j = 0; ; j++) {
                 int flag = 0;
-                random = Math.floor(Math.random() * (max+1-min));
+                random = Math.floor(Math.random()*(max-min))+min;
                 for (int k = 0; k < i; k++) {
                     if (arrayList[k] == (int) random) {
                         flag = 1;
